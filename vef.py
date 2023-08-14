@@ -345,7 +345,7 @@ def vef_run():
     with col1:
         st.write("")
     with col3:
-        st.markdown("<h2 style='text-align: right; color: #64469b;'font-size:15px; margin-top:-20px; font-family:Helvetica;'>Depreciation Price Calculation</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='text-align: right; color: #64469b;'font-size:15px; margin-right:00px; font-family:Helvetica;'>Depreciation Price Calculation</h2>", unsafe_allow_html=True)
         custom_css = """
         <style>
         .css-1gulkj5 {

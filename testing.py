@@ -74,13 +74,13 @@ tab_list = ["Price Prediction", "OdoMeter Reading", "Number Plate Extraction","A
 selected = option_menu(
     menu_title=None,
     options=["Price Prediction", "Auto Annotation","Vehicle Part Detection","OdoMeter Reading", "Number Plate Extraction",],
-    icons=["currency-rupee","speedometer2","badge-ar-fill","arrow-right-square","arrow-right-circle-fill"],
+    icons=["currency-rupee","arrow-right-square","arrow-right-circle-fill","speedometer2","badge-ar-fill",],
     menu_icon="cast",
     default_index=0,
     orientation="horizontal",
     styles={
         "container":{"padding":"0!important","background-color":"pink"},
-        "icon":{"color":"orange","font-size":"25px"},
+        "icon":{"color":"black","font-size":"25px"},
         "nav-link":{
             "font-size":"15px",
             "text-align":"left",

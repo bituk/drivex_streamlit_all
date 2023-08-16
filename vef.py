@@ -396,11 +396,11 @@ def vef_run():
             .stButton button {
                 background-color:#8833FF;
                 color: #ffffff;
-                padding: 0.5rem;
-                width:300px;
+                padding: 0.4rem;
+                width:280px;
                 margin-top:50px;
                 border-radius: 3rem;
-                margin-left:120px;
+                margin-left:100px;
             }
             </style>
             """

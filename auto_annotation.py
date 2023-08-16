@@ -95,7 +95,7 @@ def annotation():
                             
                             f.write(f'{class_id} {x_center} {y_center} {width} {height}\n')  # Save normalized coordinates of the detected region
             
-        model_path= "best.pt"
+        model_path= "best1.pt"
         data = output_path
         output_dir = "output_label_dir"
         if not os.path.exists(output_dir):
@@ -189,21 +189,35 @@ def annotation():
     if not os.path.exists(ann_path):
         os.makedirs(ann_path)
 
-    col1, col2,col3,col4= st.columns([0.5,0.8,1,0.7])
+    col1, col2,col3,col4= st.columns([0.5,0.7,1,0.7])
     with col3:
-        st.markdown("<h2 style='text-align: right; color: #64469b;'font-size:20px; margin-top:-20px;margin-left:400px; font-family:Helvetica;'>Bike Part Auto Annotation</h2>", unsafe_allow_html=True)
+        custom_css2 = """
+        <style>
+        .custom-h1 {
+            text-align: center;
+            color: #64469b;
+            font-size:30px; 
+            margin-top:-20px;
+            margin-left:50px
+            font-family:Helvetica;
+        }
+        </style>
+        """
+        st.markdown(custom_css2, unsafe_allow_html=True)
+        # Use the custom style in a header
+        st.markdown('<h1 class="custom-h1">Bike Part Auto Annotation</h1>', unsafe_allow_html=True)
         custom_css = """
         <style>
         .css-1gulkj5 {
             display: flex;
             -webkit-box-align: center;
             align-items: center;
-            padding: 0.6rem;
+            padding: 0.4rem;
             width:400px;
             background-color: #FF7B33;
             border-radius: 3rem;
             color: rgb(49, 51, 63);
-            margin-left:100px;
+            margin-left:60px;
         }
         </style>
         """
@@ -216,8 +230,8 @@ def annotation():
             .stButton button {
                 background-color:#8833FF;
                 color: #ffffff;
-                padding: 0.5rem;
-                width:300px;
+                padding: 0.4rem;
+                width:280px;
                 margin-top:50px;
                 border-radius: 3rem;
                 margin-left:120px;
@@ -252,9 +266,9 @@ def annotation():
                 background-color:#8833FF;
                 color: #ffffff;
                 padding: 0.5rem;
-                width:300px;
+                width:280px;
                 border-radius: 3rem;
-                margin-right:100px;
+                margin-right:150px;
             }
             </style>
             """
